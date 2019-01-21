@@ -47,12 +47,16 @@ Use the supplied data as the source of data to answer the questions. Copy the SQ
  `INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War!!', 2018, '00:00');`
 
 9.  The cinema would also like to make the Guardians movies a back to back feature. Find out the show time of "Guardians of the Galaxy" and set the show time of "Guardians of the Galaxy 2" to start two hours later.
-`SELECT show_time FROM movies WHERE title = 'Guardians of the Galaxy';`
-`UPDATE movies SET show_time = '00:50' WHERE title = 'Guardians of the Galaxy 2';`
+```
+SELECT show_time FROM movies WHERE title = 'Guardians of the Galaxy';
+UPDATE movies SET show_time = '00:50' WHERE title = 'Guardians of the Galaxy 2';
+```
 
 ## Extension
 
 1.  Research how to delete multiple entries from your table in a single command.
-`DELETE FROM movies WHERE title LIKE '%Iron%';`
-`DELETE FROM movies WHERE id BETWEEN 8 and 11;`
-`DELETE FROM movies WHERE year < 2013;`
+```
+DELETE FROM movies WHERE title LIKE '%Iron%';
+DELETE FROM movies WHERE id BETWEEN 8 and 11;
+DELETE FROM movies WHERE year < 2013;
+```
